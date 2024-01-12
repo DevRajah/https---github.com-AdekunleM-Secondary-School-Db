@@ -10,7 +10,7 @@ port = process.env.PORT
 
 app.use(express.json());
 
-app.get('/api/v1', (req, res) => {
+app.get('/', (req, res) => {
     res.send("Welcome to the School System API");
 })
 
