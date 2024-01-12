@@ -1,2 +1,3 @@
-
+pNRbNlthirZJSt1N
+mongodb+srv://adekunlemichael1319:pNRbNlthirZJSt1N@cluster0.yjbw09e.mongodb.net/
 mongodb+srv://adekunlemichael1319:<X7tmuwaPn2YIH38S>@cluster0.gtks7ff.mongodb.net/classwork

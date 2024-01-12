@@ -26,6 +26,7 @@ const scoreSchema = new mongoose.Schema({
         type: Number, 
         require: true
     }, 
+    
     civic: {
         type: Number,
         require: true

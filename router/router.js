@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const {registerStudent, loginStudent, enterScore, viewScores, viewOne, updateScore, deleteScore, logOut} = require('../controller/controller');
+const {registerStudent, loginStudent, enterScore, viewScores, viewOne, updateScore, deleteScore, logOut, getAll,} = require('../controller/controller');
 const {authenticate} = require('../middleware/authenticate')
 
 //endpoint to register a new student
@@ -10,6 +10,8 @@ router.post('/register', registerStudent)
 
 //endpoint to login a registered student
 router.post('/login', loginStudent)
+
+router.get("/getall", getAll)
 
 //endpoint to enter the score of a login student
 router.post('/addscore', authenticate, enterScore)  

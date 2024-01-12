@@ -141,6 +141,27 @@ const enterScore = async (req, res) => {
     }
 } 
 
+const getAll = async (req, res) => {
+    try {
+      const students = await registerModel.find();
+      if (!students) {
+        res.status(404).json({
+          message: "No students found",
+        });
+      } else {
+        res.status(201).json({
+          message: "All students in my database.",
+          data: students,
+          totalNumberOfStudents: students.length,
+        });
+      }
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  };
+  
 
 // Function to view all added scores on the server
 const viewScores = async (req, res) => {
@@ -291,5 +312,6 @@ module.exports = {
     updateScore,
     deleteScore,
     logOut,
+    getAll,
 
 }
