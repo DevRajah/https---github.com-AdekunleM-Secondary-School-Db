@@ -1,0 +1,2 @@
+
+mongodb+srv://adekunlemichael1319:<X7tmuwaPn2YIH38S>@cluster0.gtks7ff.mongodb.net/classwork
